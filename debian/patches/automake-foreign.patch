@@ -1,0 +1,18 @@
+Description: Set the foreign option for automake
+Author: Andrey Rahmatullin <wrar@debian.org>
+Bug-Debian: https://bugs.debian.org/766492
+Last-Update: 2014-11-08
+
+Index: b/configure.in
+===================================================================
+--- a/configure.in
++++ b/configure.in
+@@ -14,7 +14,7 @@ AC_CONFIG_SRCDIR([src/libecap/adapter/se
+ AC_CONFIG_HEADERS(src/libecap/common/ac-autoconf.h)
+ AX_PREFIX_CONFIG_H(src/libecap/common/autoconf.h)
+ 
+-AM_INIT_AUTOMAKE([nostdinc])
++AM_INIT_AUTOMAKE([nostdinc foreign])
+ AM_MAINTAINER_MODE
+ 
+ LT_INIT

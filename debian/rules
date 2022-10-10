@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+export DEB_CXXFLAGS_MAINT_APPEND = -Wall -std=c++11
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/autoreconf.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS = --libdir="\$${prefix}/lib/$(DEB_HOST_MULTIARCH)"
+
+override_dh_installchangelogs:
+	dh_installchangelogs change.log upstream

@@ -1,0 +1,75 @@
+libecap (1.0.1-3.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Adjust symbols file for missing features in libstdc++ on armel.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 03 Oct 2016 23:22:11 +0200
+
+libecap (1.0.1-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload. Closes: #838945. 
+  * Don't encode the build environment in the include headers. Closes: #815820.
+  * Bump standards and debhelper versions.
+  * Drop obsolete g++ build dependency.
+  * Build with optimization and hardening flags.
+  * Create symbols file for the libecap3 shared library.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 27 Sep 2016 00:23:35 +0200
+
+libecap (1.0.1-3) unstable; urgency=medium
+
+  * Multiarchify the package (thanks to Matthias Klose) (Closes: #812911)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 17 Feb 2016 00:49:00 +0100
+
+libecap (1.0.1-2) unstable; urgency=medium
+
+  * debian/control
+    - Rebuilt for GCC5.0 transition (Closes: #791117)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 05 Aug 2015 23:00:33 +0200
+
+libecap (1.0.1-1) unstable; urgency=low
+
+  * New upstream release 1.0.1
+    - Includes patch for FTBFS on clang (LaunchPad #1453630)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 22 Jul 2015 16:17:00 +0200
+
+libecap (1.0.0-1) unstable; urgency=low
+
+  * New upstream release 1.0.0
+
+  * debian/libecap2.{dirs,install,-dev.dirs,-dev.install}
+    - Renamed to libecap3* matching upstream ABI 3:0:0
+
+  * debian/control
+    - Renamed package libecap2 to libecap3
+    - Renamed package libecap2-dev to libecap3-dev
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 11 May 2015 12:10:00 +0200
+
+libecap (0.2.0-3) unstable; urgency=low
+
+  * Enable 'foreign' automake option, thanks to Andrey Rahmatullin
+    (Closes: #766492)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 10 Nov 2014 19:21:04 +0100
+
+libecap (0.2.0-2) unstable; urgency=low
+
+  * Fix FTBFS on new ports, thanks to Breno Leitao (Closes: #748292)
+
+  * debian/copyright
+    - Fixed short name for BSD license
+
+  * debian/control
+    - Bumped Standard-Version to 3.9.6 (no change needed)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 20 Oct 2014 19:21:04 +0200
+
+libecap (0.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #634204)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed,  5 Dec 2012 20:11:04 +0100

@@ -1,0 +1,39 @@
+Source: libecap
+Priority: extra
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Build-Depends: debhelper (>= 9), autotools-dev, cdbs, dh-autoreconf
+Standards-Version: 3.9.8
+Section: libs
+Homepage: http://www.e-cap.org/Downloads
+
+Package: libecap3-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libecap3 (= ${binary:Version}), ${misc:Depends}
+Conflicts: libecap2-dev
+Description: eCAP development libraries
+ eCAP is a software interface that allows a network application,
+ such as an HTTP proxy or an ICAP server, to outsource content
+ analysis and adaptation to a loadable module. For each applicable
+ protocol message being processed, an eCAP-enabled host application
+ supplies the message details to the adaptation module and gets
+ back an adapted message, a "not interested" response, or a "block
+ this message now!" instruction. These exchanges often include
+ message bodies.
+
+Package: libecap3
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: eCAP library
+ eCAP is a software interface that allows a network application,
+ such as an HTTP proxy or an ICAP server, to outsource content
+ analysis and adaptation to a loadable module. For each applicable
+ protocol message being processed, an eCAP-enabled host application
+ supplies the message details to the adaptation module and gets
+ back an adapted message, a "not interested" response, or a "block
+ this message now!" instruction. These exchanges often include
+ message bodies.

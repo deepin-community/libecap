@@ -1,0 +1,14 @@
+Index: b/cfgaux/xstd_common.ac
+===================================================================
+--- a/cfgaux/xstd_common.ac
++++ b/cfgaux/xstd_common.ac
+@@ -1,9 +1,5 @@
+ dnl generally useful checks
+ 
+-dnl general stuff used by other checks
+-dnl AC_CANONICAL_HOST
+-AC_DEFINE_UNQUOTED(CONFIG_HOST_TYPE, "$host", "build environment")
+-
+ dnl check for programs
+ AC_PROG_INSTALL
+ 
