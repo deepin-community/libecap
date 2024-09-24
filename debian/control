@@ -1,10 +1,10 @@
 Source: libecap
-Priority: extra
+Priority: optional
 Maintainer: Luigi Gangitano <luigi@debian.org>
 Build-Depends: debhelper (>= 9), autotools-dev, cdbs, dh-autoreconf
 Standards-Version: 3.9.8
 Section: libs
-Homepage: http://www.e-cap.org/Downloads
+Homepage: https://www.e-cap.org
 
 Package: libecap3-dev
 Section: libdevel
